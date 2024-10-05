@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          let a = undefined;
+          let b = null;
+          let c = b + '4 2';
+
+          let d = Number(a);
+          let e = Number(b);
+          let f = Number(c);
+
+          console.log(d); //NaN เพราะ undefined แปลงเป็นตัวเลขไมได้  
+          console.log(e); //0 เพราะเป็น null
+          console.log(f); //c= "null42" NaN เพราะไม่ใช่ตัวเลข จึงใส่ค่าไม่ได้
+     </script>
+</body>
+</html>
